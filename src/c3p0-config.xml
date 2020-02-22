@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!-- 默认配置 -->
+    <default-config>
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/data_st?serverTimezone=Asia/Shanghai</property>
+        <property name="user">root</property>
+        <property name="password">aRainman</property>
+        <property name="acquireIncrement">3</property>
+        <property name="initialPoolSize">10</property>
+        <property name="minPollSize">3</property>
+        <property name="maxPoolSize">20</property>
+    </default-config>
+    
+    <!-- 自定义配置 -->
+    <named-config name="DIY">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/data_st?serverTimezone=Asia/Shanghai</property>
+        <property name="user">root</property>
+        <property name="password">aRainman</property>
+        <property name="acquireIncrement">2</property>
+        <property name="initialPoolSize">8</property>
+        <property name="minPollSize">3</property>
+        <property name="maxPoolSize">15</property>
+    </named-config>
+    
+</c3p0-config>
